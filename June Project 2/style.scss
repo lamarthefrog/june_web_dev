@@ -1,0 +1,72 @@
+
+@mixin textShadow {
+    text-shadow: 3px 3px 5px black;
+}
+
+@mixin centerElement {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+* {
+    font-family: 'Hind', sans-serif;
+
+    body {
+        background-color: rgb(240, 240, 240);
+    }
+
+    .card {
+        .card-title {
+            margin-top: 0.5rem;
+        }
+
+        .card-text {
+            margin-bottom: 0.5rem;
+        }
+    }
+    
+    .jumbotron {
+        background-image: url("Images/oregon-waterfall-stock-footage.jpg");
+        /*background-size: cover makes it take up full size of jumbotron*/
+        background-size: cover;
+
+        /*note: think of vh as the percent of the page's height*/
+
+        h1 {
+            color: white;
+            font-weight: bold;
+            @include textShadow();
+            @include centerElement();
+            margin-left: 4rem;
+            margin-right: 4rem;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.25);
+            border: 10px rgba(0, 0, 0, 0.25);
+            border-radius: 15px;
+        }
+        
+        .lead {
+            color: white;
+            @include textShadow();
+            @include centerElement();
+            padding: 0.5rem;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            background-color: rgba(0, 0, 0, 0.25);
+            border: 10px rgba(0, 0, 0, 0.25);
+            border-radius: 15px;
+        }
+    }
+
+    nav {
+
+        .nav-item {
+            color: white;
+            font-size: 1.2rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    }
+    
+}

@@ -1,0 +1,13 @@
+June Project 2 Notes:
+-practiced using sass to generate stylesheets
+-worked on getting a basic homepage which uses responsive web design (Bootstrap)
+-used web font cdn
+-made another nav that collapses on smaller screens, took notes to make this quicker
+-card elements set to be 2 per col on large screens, 1 per col on small
+
+
+-getting better at accounting for responsive elements and how things will appear on small screens
+-sass has been going much better than css, makes it easier to widely apply changes
+-sass mixins have been very convenient, I should remember to save variables as well for quick colors
+-good practice trying to make text distinct from images
+-remember display-# sizes are very useful for heading elements
