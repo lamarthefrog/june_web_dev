@@ -1,0 +1,64 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+.intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text {
+    color: white;
+    font-size: 3rem;
+}
+
+.hide {
+    background: black;
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+.intro-2 {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text-2 {
+    color: white;
+    font-size: 3rem;
+}
+
+.hide-2 {
+    background: black;
+    overflow: hidden;
+}
+
+.hide-2 span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+.landing {
+    min-height: 100vh;
+    background: url("lion\ stencil\ blank.png");
+    background-size: cover;
+    padding: 0rem 5rem;
+}

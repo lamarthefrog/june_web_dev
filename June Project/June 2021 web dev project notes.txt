@@ -1,0 +1,22 @@
+June 2021 Project Notes
+
+OVERVIEW:
+-small site (5 pages) for fictional bougie restaurant
+-Pages: Home, Menu, Locations, Merch, Contact
+-use bootstrap and js (copy techniques from Better Buzz's site for jquery effects)
+-set proper media queries to adhere to mobile-first dev
+-look up how to use sass mixins for color choices
+-logo at top above topnav (make sure nav is cleaner than you normally do)
+-footer at bottom with social media icons and contact
+
+PLAN:
+-set javascript / jquery events for showy web effects (it's been a while, re-learn)
+-use sass mixins to make colors more appealing (watch a tutorial for this)
+-final images, logos, etc
+
+JQUERY EFFECTS TO CONSIDER:
+-highlight images transparent gray on hover
+-have "More Info" appear with hover as well
+-text color change on hover to denote clickable
+-maybe a text effect or animation on click
+

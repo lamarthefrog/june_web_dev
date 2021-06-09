@@ -1,0 +1,99 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+body {
+    background-color: black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer .card {
+    background-color: black;
+}
+
+hr {
+    background-color: white;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+}
+
+h5 {
+    padding-top: 0.25em;
+    font-weight: bold;
+}
+
+label {
+    color: white;
+}
+
+nav li {
+    text-align: center;
+    font-size: 1.75em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    padding: 0.5em;
+}
+
+/*note: keep most jumbotron class attributes, but move the image itself to be an id.
+This will allow different hero images on different pages more easily */
+.jumbotron {
+    /*setting a minimum height so image doesn't squish*/
+    min-height: 300px;
+    
+    /*the image with a darken gradient effect*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/heroPlaceholder.png");
+
+    /*Set height*/
+    height: 100%;
+
+    /*position and center to scale on all screens */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+} 
+
+.lead {
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#topLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

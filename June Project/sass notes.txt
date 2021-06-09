@@ -1,0 +1,78 @@
+SOME SASS NOTES:
+-sass is basically a framework that lets you make CSS code more easily, it can also convert to css
+-you can also import scss files into other ones (doesn't need extension, it will recognize automatically):
+@import "./somefile";
+-sass uses an scss file extension
+-----------------------------------------------------------------------------------
+-it allows for nesting styles:
+CSS:
+h1 {
+	color: black;
+}
+h1 a {
+	color: blue;
+}
+
+SASS:
+h1 {
+	color: black;
+
+	a {
+		color: blue;
+	}
+}
+
+-sass also lets you save colors as variables:
+$primaryBtn: rgb(182, 85, 153);
+
+button {
+	background: $primaryBtn;
+}
+------------------------------------------------------------------------
+-sass allows for using mixins, which act much like a function does in js
+you set up a mixin by typing @mixin [name] { some code }:
+@mixin flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+-to use your mixin in another code block, use @include [mixin name]();
+header {
+	@include flexCenter();
+
+	background: lightblue;
+	height: 100vh;
+	color: $primaryBtn
+}
+-------------------------------------------------------------------------
+-sass mixins with parameters by setting parentheses arguments in the mixin definition
+#mixin flexCenter($direction) {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: $direction;
+}
+
+-then to use it, you just include the parameter when calling the mixin
+header {
+	@include flexCenter(column);
+}
+----------------------------------------------------------------------------
+-sass extensions let you inherit style attributes from one tag to another
+-any styles you put after the extension will override the extension's attributes
+-we extend by writing @extend [name of what you want to extend];
+.contact {
+	@extend header;
+}
+
+-overriding background:
+.contact {
+	@extend header;
+	background: lightcoral;
+}
+
+----------------------------------------------------------------------------
+-you can do calculation operators in sass as well
+ie. width: 100% - 20%;

@@ -1,0 +1,44 @@
+
+$color1: green;
+$color2: black;
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin giantText {
+    font-weight: bold;
+    font-size: 4em;
+    text-align: center;
+}
+
+body {
+    background: black;
+    color: white;
+
+    h1 {
+        background: grey;
+        font-weight: bold;
+
+        @include flexCenter();
+    }
+
+    h2 {
+        background: $color1;
+        color: $color2;
+
+        @include flexCenter();
+    }
+
+    p {
+        @include flexCenter();
+        @include giantText();
+    }
+
+    li {
+        @extend p;
+    }
+}
+
