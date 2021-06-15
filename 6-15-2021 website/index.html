@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>6/15/2021 Website</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Google Font CDN-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <!--Remember to add d-flex class when wanting to use justify content on things-->
+            <!--you need it to be flex in order to be moved in that way-->
+            <h1 class="display-2 d-flex justify-content-center">A Table You Can Mess Up</h1>
+            <p class="lead d-flex justify-content-center">
+                This page includes a table that you can populate with random 4 digit values. 
+                The table colors will also change depending on the size of that 4 digit value. 
+                0-2499 will be red, 2500-4999 will be orange, 5000-7499 will be yellow, and 7500+ 
+                will be green. If you don't like the numbers you get, feel free to hit the button again.
+            </p>
+        </div>
+
+        <div class="row justify-content-center">
+            <h2 class="display-3 bg-dark text-white">The Titular Table</h2>
+        </div>
+
+        <!--table and table-bordered class used to style the table-->
+        <!--text-center class is inherited to all items in the table-->
+        <div class="row">
+        <table class="table table-bordered text-center" height="200px">
+            <tbody>
+                <tr>
+                    <th class="bg-dark text-white">Quarter 1</th>
+                    <th class="bg-dark text-white">Quarter 2</th>
+                    <th class="bg-dark text-white">Quarter 3</th>
+                    <th class="bg-dark text-white">Quarter 4</th>
+                </tr>
+                <tr>
+                    <td class="font-weight-bold" id="tableCell1">xxxxx</td>
+                    <td class="font-weight-bold" id="tableCell2">xxxxx</td>
+                    <td class="font-weight-bold" id="tableCell3">xxxxx</td>
+                    <td class="font-weight-bold" id="tableCell4">xxxxx</td>
+                </tr>
+                <tr>
+                    <td class="font-weight-bold" id="tableCell5">xxxxx</td>
+                    <td class="font-weight-bold" id="tableCell6">xxxxx</td>
+                    <td class="font-weight-bold" id="tableCell7">xxxxx</td>
+                    <td class="font-weight-bold" id="tableCell8">xxxxx</td>
+                </tr>
+                <tr>
+                    <td class="font-weight-bold" id="tableCell9">xxxxx</td>
+                    <td class="font-weight-bold" id="tableCell10">xxxxx</td>
+                    <td class="font-weight-bold" id="tableCell11">xxxxx</td>
+                    <td class="font-weight-bold" id="tableCell12">xxxxx</td>
+                </tr>
+                <tr>
+                    <td class="font-weight-bold" id="tableCell13">xxxxx</td>
+                    <td class="font-weight-bold" id="tableCell14">xxxxx</td>
+                    <td class="font-weight-bold" id="tableCell15">xxxxx</td>
+                    <td class="font-weight-bold" id="tableCell16">xxxxx</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <!--btn-block class makes a full width button and centers the button text-->
+        <button type="button" class="btn btn-dark btn-block" id="messUpBtn">Mess Up This Table</button>
+        <br>
+
+        <!--font-italic used in boostrap instead of css styling-->
+        <footer class="text-center font-italic">
+            James Stephenson 6-15-2021
+        </footer>
+    
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--My own jquery scripting-->
+    <script src="6-15-2021-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@mixin roundBorder {
+    border: 5px;
+    border-radius: 10px;
+}
+
+body {
+
+    .jumbotron {
+        background-color: rgb(179, 255, 255);
+        @include roundBorder();
+    }
+
+    .lead {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+
+    h1 {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h2 {
+        padding: 0.25em;
+        width: 100%;
+        text-align: center;
+        @include roundBorder();
+    }
+}

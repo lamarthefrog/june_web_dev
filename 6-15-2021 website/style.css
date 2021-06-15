@@ -1,0 +1,23 @@
+body .jumbotron {
+  background-color: #b3ffff;
+  border: 5px;
+  border-radius: 10px;
+}
+
+body .lead {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+body h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+body h2 {
+  padding: 0.25em;
+  width: 100%;
+  text-align: center;
+  border: 5px;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */
