@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,kBAAkB;CAClC;;AAED,AAAA,GAAG,CAAC;EACA,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;CACrB;;AAED,AAAA,EAAE,CAAC;EACC,UAAU,EAAE,KAAK;CACpB",
+    "sources": [
+        "eyeVomit.scss"
+    ],
+    "names": [],
+    "file": "eyeVomit.css"
+}
