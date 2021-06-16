@@ -1,0 +1,10 @@
+.jumbotron {
+  background-image: url("flandersAngry.jpg");
+  background-size: cover;
+  background-position-y: -6rem;
+}
+
+p {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/*# sourceMappingURL=style.css.map */
