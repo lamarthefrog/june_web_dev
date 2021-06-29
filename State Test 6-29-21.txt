@@ -1,0 +1,80 @@
+import "./styles.css";
+import React, { useState } from "react";
+
+//coded in codesandbox
+
+function StateTest() {
+  const [color, setColor] = useState(0);
+  var chosenColor = "red";
+
+  if (color % 2 == 0) {
+    chosenColor = "red";
+  } else {
+    chosenColor = "blue";
+  }
+
+  
+
+  return (
+    <div style={{ backgroundColor: chosenColor }}>some text
+      <br/>
+      <button onClick={() => setColor(color + 1)}>Fuck</button>;
+    </div>
+  );
+}
+
+
+function StateTest2() {
+  var [state, setState] = useState(false);
+
+  if (state == 0 ) {
+    return(
+      <div style={{backgroundColor: "red"}}>
+        <h1 onClick = {()=> setState(state+1)} >Click me to change bg</h1>
+      </div>);
+  } else if (state > 0) {
+    return (
+      <div style={{backgroundColor: "blue"}}>
+        <h1 onClick = {()=> setState(state+1)} >Complete</h1>
+      </div> );
+    }
+}
+export default function App() {
+  return (
+    <div className="App">
+      <h1>Some Text</h1>
+
+      <StateTest />
+    </div>
+  );
+}
+
+//string and array practice 
+function EveryDayTheSame() {
+  const poemArray = ['Every', 'Day', 'The', 'Same', 'Dream'];
+  var [counter, setCounter] = useState(0);
+  var finalString="";
+
+  if (counter <= 0) {
+    finalString = poemArray[counter];
+  return (
+    <div style={{backgroundColor: "lightGrey"}}>
+      <button type="button" onClick={() => setCounter(counter += 1)}>Click</button>
+      <h1>{finalString}</h1>
+    </div>  
+  ); } else if (counter > 0) {
+    for (i=0; i <= counter; i++)
+    {
+      if (poemArray[i] == undefined)
+      {
+        break;
+      }
+      finalString += poemArray[i] + " ";
+    }
+  return (
+    <div style={{backgroundColor: "lightGrey"}}>
+      <button type="button" onClick={() => setCounter(counter += 1)}>Click</button>
+      <h1>{finalString}</h1>  
+    </div>
+  ); }
+}
