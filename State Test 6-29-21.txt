@@ -78,3 +78,110 @@ function EveryDayTheSame() {
     </div>
   ); }
 }
+
+//object test using props to populate
+import "./styles.css";
+
+function PersonObject(props) {
+  let person = {
+    firstName: props.firstname,
+    lastName: props.lastname,
+    birthYear: props.birthyear
+  };
+
+  return (
+    <div style={{ backgroundColor: "lightGreen" }}>
+      <h1>{person.firstName}</h1>
+      <h1>{person.lastName}</h1>
+      <h1>{person.birthYear}</h1>
+    </div>
+  );
+}
+
+export default function App() {
+  return (
+    <div className="App">
+      <PersonObject firstname="James" lastname="Stephenson" birthyear="1994" />
+    </div>
+  );
+}
+--------------------------------------------------------------------------------
+
+function RenderMultipleComponents() {
+  //defining a list of numbers
+  const numbers = [1, 2, 3, 4, 5];
+
+  //we use the map method to apply to all things in the list
+  //we use map on the numbers list
+  //arrow function puts that number into a list element
+  const listItems = numbers.map((number)=>
+    <li>{number}</li>
+  );
+
+  return(
+    //sending the listItems variable to browser
+    <ul>{listItems}</ul>
+  )
+}
+-----------------------------------------------------------------------------
+function RenderMultipleComponents() {
+  //defining a list of names
+  const names = ["John", "James", "Jeremy"];
+
+  //we use the map method to apply to all items in the list
+  //we use map on the names list
+  //arrow function puts that name into a list element	
+  //similar to python's "for item in items"
+  const listItems = names.map((name)=>
+    <li>{name}</li>
+  );
+
+  return(
+    //sending the listItems variable to browser
+    <ul>{listItems}</ul>
+  )
+}
+
+----------------------------------------------------------------------------
+//basic dice roller, rolls 5 d100s
+
+import "./styles.css";
+
+//sum of 5 d100s
+function RNG() {
+  //counter variable
+  var i=0;
+  //empty list to append to
+  var randomList = [];
+
+  while (i <= 5)
+  {
+    var randomNum = Math.floor(Math.random() * 100);
+    randomList.push(randomNum);
+    i++;
+  }
+
+  const listItems = randomList.map((listItem)=>
+    <h1>{listItem}</h1>
+  );
+
+  var finalRollVal = 0;
+  const finalRoll = randomList.map((listItem)=>
+    finalRollVal += listItem
+  );
+  
+  return(
+    <div>
+      {listItems}
+      <h1 style={{color: "red"}}>{finalRollVal}</h1>
+    </div>
+  )
+}
+
+export default function App() {
+  return (
+    <div className="App">
+      <RNG/>
+    </div>
+  );
+}
